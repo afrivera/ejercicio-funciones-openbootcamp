@@ -12,6 +12,7 @@ public class Main {
             System.out.println("numeroIf mayor que 0");
         }
 
+        System.out.println();
 
         // segundo punto
         int numeroWhile = 0;
@@ -19,5 +20,21 @@ public class Main {
             System.out.println("numeroWhile = " + numeroWhile);
             numeroWhile++;
         }
+
+        System.out.println();
+        // tercer punto doWhile
+        do{
+            System.out.println("numeroWhile en doWhile = " + numeroWhile);
+            numeroWhile++;
+        }while (numeroWhile<3);
+
+        System.out.println();
+
+        // cuarto punto bucle for
+        for (int numeroFor = 0; numeroFor <= 3; numeroFor++) {
+            System.out.println("numeroFor = " + numeroFor);
+        }
+        System.out.println();
+
     }
 }
