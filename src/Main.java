@@ -36,5 +36,18 @@ public class Main {
         }
         System.out.println();
 
+        // Quinto punto Switchcase
+        String estacion = "OTOÑO";
+        switch (estacion){
+            case "VERANO":
+            case "OTOÑO":
+            case "INVIERNO":
+            case "PRIMAVERA":
+                System.out.println("estacion = " + estacion);
+                break;
+            default:
+                System.out.println("No es una estación");
+
+        }
     }
 }
