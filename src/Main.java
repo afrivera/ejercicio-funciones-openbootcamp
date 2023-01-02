@@ -1,19 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-    
-        int resultado = sumarTresParametros(10, 20, 30);
-        System.out.println("resultado = " + resultado);
 
-        Coche coche = new Coche();
-        coche.aumentarPuertas();
-        coche.aumentarPuertas();
-        coche.aumentarPuertas();
-        coche.aumentarPuertas();
-        System.out.println("cantidad de puertas = " + coche.puertas);
+        String [] nombres = { "Andres", "Felipe", "Rivera"};
 
+        String concatNombres = "";
+
+        for (int i = 0; i < nombres.length; i++) {
+            concatNombres+= nombres[i];
+
+        }
+        System.out.println(concatNombres);
     }
     
-    public static int sumarTresParametros(int a, int b, int c){
-        return a + b + c;
-    }
 }
