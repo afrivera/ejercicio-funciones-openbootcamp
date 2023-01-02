@@ -1,19 +1,13 @@
 public class Main {
+    public static  final double IVA = 1.19d;
     public static void main(String[] args) {
-    
-        int resultado = sumarTresParametros(10, 20, 30);
-        System.out.println("resultado = " + resultado);
 
-        Coche coche = new Coche();
-        coche.aumentarPuertas();
-        coche.aumentarPuertas();
-        coche.aumentarPuertas();
-        coche.aumentarPuertas();
-        System.out.println("cantidad de puertas = " + coche.puertas);
+        double getIva = getIva(19.99);
+        System.out.println("Precio con Iva = " + getIva);
 
     }
-    
-    public static int sumarTresParametros(int a, int b, int c){
-        return a + b + c;
+
+    public static double getIva(double precio){
+        return precio* IVA;
     }
 }
